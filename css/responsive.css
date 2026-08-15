@@ -1,0 +1,118 @@
+@media (max-width: 1300px) {
+    header nav .navbar-nav {
+        background-color: black;
+        text-align: center;
+        border-radius: 5px;
+        column-gap: 0px;
+        row-gap: 5px;
+        padding: 15px 10px;
+    }
+
+    header nav .navbar-brand {
+        width: 20%;
+    }
+
+    header nav .navbar-toggler {
+        border-color: var(--bs-success);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 40px;
+        width: 50px;
+        padding: 0;
+    }
+
+    header nav .navbar-toggler:focus {
+        background-color: #FFF;
+        box-shadow: none;
+    }
+
+    header nav .navbar-toggler span {
+        display: block;
+        width: 60%;
+        height: 3px;
+        background-color: var(--bs-success);
+    }
+
+    #About .part1 {
+        margin-bottom: 25px;
+    }
+
+    #About .part2 .box {
+        margin-bottom: 20px;
+    }
+
+    #About .part2 .box .item {
+        margin: 0px 30px;
+    }
+
+    #Services .container .extra .item .row {
+        flex-direction: row;
+    }
+
+    #Menu .box .item {
+
+        margin: 0px 60px;
+
+    }
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+    header nav .navbar-brand {
+        width: 18%;
+    }
+
+    #About .part2 .box .item {
+        margin: 0px 60px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+    header nav .navbar-brand {
+        width: 15%;
+    }
+
+    #About .part2 .box .item {
+        margin: 0px;
+    }
+
+    #About .part2 .box .item .specialcard {
+        max-width: 280px;
+        margin: auto;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+    header nav .navbar-brand {
+        width: 12%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    header nav .navbar-nav {
+        background-color: transparent;
+    }
+
+    header nav .navbar-brand {
+        width: 8%;
+    }
+
+    header nav .navbar-toggler {
+
+        display: none;
+    }
+
+    #About .part2 .box .specialcard .body p,
+    #About .part2 .box .specialcard .body button {
+        font-weight: 100;
+        font-size: 15px;
+    }
+
+    #Services .container .extra .item .row {
+        flex-direction: row-reverse;
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {}

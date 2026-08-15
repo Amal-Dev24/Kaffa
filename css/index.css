@@ -1,0 +1,577 @@
+header nav {
+    z-index: 2;
+    width: 100%;
+}
+
+header nav .nav-link {
+    letter-spacing: 2px;
+    font-weight: 100;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+
+header nav .nav-link span.text {
+    position: relative;
+    border-radius: 5px;
+    z-index: 2;
+
+}
+
+header nav .nav-link::before,
+header nav .nav-link::after,
+header nav .nav-link span.shap {
+    content: "";
+    width: 100%;
+    height: calc(100%/3);
+    display: block;
+    position: absolute;
+    background-color: var(--bs-success);
+    transition-duration: 0.5s;
+}
+
+header nav .nav-link::before {
+    top: 0;
+    left: -100%;
+}
+
+header nav .nav-link::after {
+    bottom: 0;
+    left: -100%;
+}
+
+header nav .nav-link span.shap {
+    top: calc(100%/3);
+    right: -100%;
+}
+
+header nav .nav-link:hover::before {
+    left: 0%;
+}
+
+header nav .nav-link:hover::after {
+    left: 0%;
+}
+
+header nav .nav-link:hover span.shap {
+    right: 0%;
+}
+
+header #carouselExampleCaptions .carousel-indicators button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--bs-success);
+
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item:nth-of-type(1) {
+    background-image: url(../images-kaffa/images/banner1.jpg);
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item:nth-of-type(2) {
+    background-image: url(../images-kaffa/images/banner2.jpg);
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item:nth-of-type(3) {
+    background-image: url(../images-kaffa/images/banner3.jpg);
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item:nth-of-type(4) {
+    background-image: url(../images-kaffa/images/banner4.jpg);
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
+    position: initial;
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .buttons a {
+    position: relative;
+    overflow: hidden;
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .buttons a::after,
+header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .buttons a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border: 21px solid;
+    border-top-color: var(--bs-success);
+    border-bottom-color: var(--bs-success);
+    border-left-color: var(--bs-success);
+    border-right-color: var(--bs-success);
+    transition-duration: 1s;
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .buttons a::after {
+    border-right-color: transparent;
+    left: -100%;
+
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .buttons a:hover::after {
+    left: 0%;
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .buttons a::before {
+    border-left-color: transparent;
+    right: -100%;
+
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .buttons a:hover::before {
+    right: 0%;
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .buttons a span {
+    z-index: 2;
+    transition-duration: 0.5s;
+    position: relative;
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .buttons a:hover span {
+    color: #FFF;
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
+    transform: translateY(-30px);
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item.active .carousel-caption {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption h5 {
+
+    transition-delay: 0.2s;
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption p {
+    letter-spacing: 2px;
+    transition-delay: 0.4s;
+    font-weight: 200;
+}
+
+header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .buttons {
+
+    transition-delay: 0.6s;
+}
+
+#About {
+    background-color: var(--bs-success);
+    background-image: url(../images-kaffa/images/leaves_pattern.png);
+    background-position: center;
+
+}
+
+#About .part1 span.h6 {
+    font-size: 14px;
+}
+
+#About .part1 p {
+    width: 90%;
+}
+
+#About .part1 button {
+    position: relative;
+    overflow: hidden;
+}
+
+#About .part1 button::after,
+#About .part1 button::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    left: 0;
+    transition-duration: 0.5s;
+}
+
+#About .part1 button::after {
+    top: -40px;
+}
+
+#About .part1 button:hover::after {
+    top: 0px;
+}
+
+#About .part1 button::before {
+    bottom: -40px;
+}
+
+#About .part1 button:hover::before {
+    bottom: 0px;
+}
+
+#About .part1 button span {
+    position: relative;
+    z-index: 2;
+    transition-duration: 0.5s;
+}
+
+#About .part1 button:hover span {
+    color: var(--bs-success);
+}
+
+#About .part2 .box .item {
+    margin: 0px 10px;
+}
+
+#About .part2 .box .specialcard {
+    position: relative;
+}
+
+
+
+#About .part2 .box .specialcard .front {
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 1s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#About .part2 .box .specialcard:hover .front {
+    transform: rotateY(180deg);
+}
+
+#About .part2 .box:nth-of-type(1) .specialcard .front {
+    background-image: url(../images-kaffa/images/about_front_01.jpg);
+}
+
+#About .part2 .box:nth-of-type(2) .specialcard .front {
+    background-image: url(../images-kaffa/images/about_front_02.jpg);
+}
+
+#About .part2 .box:nth-of-type(3) .specialcard .front {
+    background-image: url(../images-kaffa/images/about_front_03.jpg);
+}
+
+#About .part2 .box .specialcard .back {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+#About .part2 .box .specialcard:hover .back {
+    transform: rotateY(0deg);
+
+}
+
+#About .part2 .box:nth-of-type(1) .specialcard .body {
+    background-color: #404042;
+}
+
+#About .part2 .box:nth-of-type(2) .specialcard .body {
+    background-color: #887748;
+}
+
+#About .part2 .box:nth-of-type(3) .specialcard .body {
+    background-color: #6D1F37;
+}
+
+#About .part2 .box .specialcard .body p,
+#About .part2 .box .specialcard .body button {
+    font-weight: 100;
+}
+
+#About .part2 .box .specialcard .body button {
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    padding: 10px 15px;
+    transition-duration: 0.5s;
+    letter-spacing: 2px;
+}
+
+#About .part2 .box .specialcard .body button:hover {
+    background-color: #FFF;
+}
+
+#About .part2 .box:nth-of-type(1) .specialcard .body button:hover {
+    color: #404042;
+}
+
+#About .part2 .box:nth-of-type(2) .specialcard .body button:hover {
+    color: #887748;
+}
+
+#About .part2 .box:nth-of-type(3) .specialcard .body button:hover {
+    color: #6D1F37;
+}
+
+#About .part2 .box .specialcard .body button i {
+    transition-duration: 0.5s;
+}
+
+#About .part2 .box .specialcard .body button:hover i {
+    margin-left: 5px;
+}
+
+#Services {
+    background-image: url(../images-kaffa/images/services-beans_bg.jpg);
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+#Services::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#Services h4 {
+    font-size: 25px;
+}
+
+#Services p {
+    color: #c2c2c2;
+    font-weight: 100;
+}
+
+#Services i {
+    font-size: 30px;
+}
+
+
+#Services .container img {
+    animation-name: animate1;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#Services .container .extra .item .row {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+#Menu {
+
+    background-color: var(--bs-success);
+    background-image: url(../images-kaffa/images/leaves_pattern.png);
+
+}
+
+#Menu ul.nav {
+    width: fit-content;
+    margin: auto;
+}
+
+#Menu ul.nav button {
+    transition-duration: 0.5s;
+    color: #FFF;
+}
+
+#Menu ul.nav button.active,
+#Menu ul.nav button:hover {
+    background-color: #FFF;
+    color: var(--bs-success);
+}
+
+#Menu .tab-pane .box {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FFF;
+    transform: scale(0);
+    transition-duration: 1s;
+}
+
+#Menu .tab-pane.show .box {
+
+    transform: scale(1);
+}
+
+#Menu .box img {
+    display: block;
+    margin: auto;
+    transform: scale(0.8);
+    transition-duration: 1s;
+}
+
+#Menu .box:hover img {
+    transform: scale(1.1);
+
+}
+
+#Menu .box h6,
+#Menu .box p {
+    position: absolute;
+    left: 0;
+    background-color: var(--bs-success);
+    background-image: url(../images-kaffa/images/leaves_pattern.png);
+    padding: 5px 10px;
+    border-radius: 0px 5px 5px 0px;
+    transform: translateX(-100%);
+    transition-duration: 1s;
+}
+
+#Menu .box:hover h6,
+#Menu .box:hover p {
+    transform: translateX(0%);
+}
+
+#Menu .box h6 {
+    top: 10px;
+}
+
+#Menu .box p {
+    bottom: 10px;
+}
+
+#BeansCoffee {
+    background-image: url(../images-kaffa/images/Beans_ice_drinks_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#BeansCoffee::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#BeansCoffee h2 {
+    font-size: clamp(25px, 6vw, 70px);
+    text-shadow: 3px 3px 1px #362d27;
+}
+
+#BeansCoffee h4 {
+    font-size: clamp(18px, 4vw, 35px);
+
+}
+
+#BeansCoffee i {
+    font-size: clamp(25px, 6vw, 50px);
+    ;
+}
+
+#BeansCoffee i:hover {
+    color: var(--bs-success);
+    cursor: pointer;
+}
+
+.model .model-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: initial;
+    width: 100%;
+    height: 100%;
+    margin: initial;
+    border-radius: 10px;
+}
+
+#Book {
+    background-image: url(../images-kaffa/images/Book_black_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Book .part2 {
+    text-align: center;
+    background-image: url(../images-kaffa/images/leaves_pattern.png);
+    background-color: var(--bs-success);
+    background-position: center;
+}
+
+#Book .part2 .item {
+    margin: 20px 50px;
+}
+
+textarea {
+    resize: none;
+    height: 300px;
+}
+
+form button {
+    position: relative;
+    overflow: hidden;
+
+}
+
+form button::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    transition-duration: 0.5s;
+}
+
+form button:hover::after {
+    bottom: 0px;
+    background-color: var(--bs-success);
+}
+
+form button span {
+    position: relative;
+    z-index: 2;
+}
+
+footer {
+    background-color: #333;
+}
+
+footer p {
+    width: fit-content;
+    margin: auto;
+    font-weight: 100;
+}
