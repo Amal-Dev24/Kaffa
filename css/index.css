@@ -522,7 +522,13 @@ header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+#Book .part1 .item {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
 #Book .part2 {
     text-align: center;
     background-image: url(../images-kaffa/images/leaves_pattern.png);
